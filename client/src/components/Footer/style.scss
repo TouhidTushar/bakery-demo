@@ -1,0 +1,113 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.fLogo {
+  font-size: 2vw;
+  color: $colorA;
+  transition: all 0.3s ease;
+}
+
+.fCont {
+  margin-top: 5px;
+  display: flex;
+  transition: all 0.3s ease;
+  li {
+    margin: 0 5px 0 0;
+  }
+}
+
+.fContLink {
+  color: $colorA;
+}
+
+.fNav,
+.fExtras {
+  font-size: 1.1vw;
+  color: $colorA;
+  transition: all 0.3s ease;
+}
+
+.bonus {
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.bLink {
+  color: $colorA;
+  font-size: 1.3vw;
+  transition: all 0.3s ease;
+}
+
+.license {
+  padding: 10px 0;
+  text-align: center;
+  color: $colorA;
+  background-color: $colorB;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1080px) {
+  .fLogo {
+    font-size: 20px;
+  }
+  .fContLink {
+    font-size: 13px;
+  }
+  .fNav,
+  .fExtras {
+    font-size: 12px;
+  }
+  .bLink {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 460px) {
+  .fLogo {
+    font-size: 16px;
+  }
+  .fNav,
+  .fExtras {
+    font-size: 11px;
+  }
+  .bLink {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .fCont {
+    display: none;
+  }
+  .license {
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .fLeft {
+    display: none;
+  }
+}

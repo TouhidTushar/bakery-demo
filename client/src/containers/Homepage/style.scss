@@ -1,0 +1,538 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.bgVideo {
+  position: relative;
+  background-color: $colorC;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  video {
+    width: 100%;
+  }
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -4px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .expBtn {
+    text-decoration: none;
+    color: $colorA;
+    border: 4px solid $colorA;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 10% 0 10px 0;
+    transition: font-size 0.4s ease;
+    &:hover {
+      transform: scale(0.9, 0.9);
+    }
+  }
+  h2 {
+    color: $colorA;
+    transition: font-size 0.4s ease;
+  }
+}
+
+.homelayout {
+  position: relative;
+  top: -18vw;
+  margin-bottom: -18vw;
+}
+
+.borderContainer {
+  width: 100%;
+  position: relative;
+  top: -4px;
+  z-index: 2;
+  img {
+    width: 100%;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.7));
+  }
+}
+
+//aboutSetion & customSection
+.aboutSection,
+.customSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.customSection {
+  flex-direction: row-reverse;
+}
+
+.content {
+  width: 40%;
+  padding: 5vw 0 0 3.5vw;
+  transition: all 0.3s ease;
+}
+
+.caption {
+  font-size: 3vw;
+  margin-bottom: 1.5vw;
+  transition: all 0.3s ease;
+}
+
+.shortAbout,
+.customMsg {
+  font-size: 1.4vw;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.abtBtn,
+.customBtn {
+  display: flex;
+  width: 100%;
+  padding: 2vw 0;
+}
+
+.abtLink,
+.findLink,
+.customLink {
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-weight: 600;
+  margin-right: 1.2vw;
+  padding: 0.8vw 1vw;
+  transition: all 0.3s ease;
+}
+
+.abtLink,
+.customLink {
+  background-color: $colorA;
+  border: 2px solid $colorC;
+  color: $colorC;
+  transition: all 0.3s ease;
+  &:hover {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+    color: $colorA;
+    background-color: $colorC;
+  }
+}
+
+.findLink {
+  background-color: $colorA;
+  border: 2px solid $colorD;
+  color: $colorD;
+  transition: all 0.3s ease;
+  &:hover {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+    color: $colorA;
+    background-color: $colorD;
+  }
+}
+
+.image {
+  width: 40%;
+  transition: all 0.3s ease;
+  img {
+    width: 100%;
+  }
+}
+
+//showcase
+.sCaption {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 80px;
+  padding-top: 35px;
+  background-color: $colorC;
+  transition: all 0.3s ease;
+  color: $colorA;
+}
+
+#sText {
+  text-align: center;
+  font-size: 1.4vw;
+  line-height: 1;
+  padding: 10px 0;
+  background-color: $colorC;
+  color: $colorA;
+  transition: all 0.3s ease;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-template-rows: repeat(auto-fill, 460px);
+  grid-gap: 1px;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorC;
+  transition: all 0.3s ease;
+}
+
+.container {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.boxA {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  &:hover {
+    .boxName {
+      display: block;
+    }
+    #box {
+      color: rgba(255, 255, 255, 0.2);
+    }
+    .pic1 {
+      transform: scale(1.6, 1.6);
+      bottom: 46%;
+      padding-bottom: 0.3vw;
+      filter: grayscale(0%);
+    }
+    .pic2 {
+      transform: scale(1.6, 1.6);
+      left: 10%;
+      bottom: 50%;
+      padding-bottom: 0.3vw;
+      filter: grayscale(0%);
+    }
+    .pic3 {
+      transform: scale(1.6, 1.6);
+      right: 10%;
+      bottom: 50%;
+      padding-bottom: 0.3vw;
+      filter: grayscale(0%);
+    }
+  }
+}
+
+.boxName {
+  position: absolute;
+  bottom: 22%;
+  z-index: 4;
+  align-self: center;
+  color: $colorA;
+  font-size: 24px;
+  padding: 10px 30px;
+  background-color: $colorB;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#box {
+  position: absolute;
+  font-size: 192px;
+  text-align: center;
+  color: $colorA;
+  bottom: 0;
+  z-index: 3;
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s ease;
+}
+
+.pic1,
+.pic2,
+.pic3 {
+  background-color: $colorA;
+  position: absolute;
+  width: 20%;
+  bottom: 36.5%;
+  border-radius: 10px;
+  padding: 0.3vw 0.3vw 0 0.3vw;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.pic1 {
+  z-index: 2;
+}
+
+.pic2 {
+  z-index: 1;
+  left: 25.5%;
+  transform: rotate(-35deg);
+}
+
+.pic3 {
+  z-index: 1;
+  right: 25.5%;
+  transform: rotate(35deg);
+}
+
+.sBtn {
+  width: 100%;
+  background-color: $colorC;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.more {
+  text-decoration: none;
+  color: $colorB;
+  font-size: 20px;
+  background-color: $colorA;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorB;
+    color: $colorA;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  }
+}
+
+//contactSection
+.contactSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  padding: 50px 0;
+  background-color: $colorD;
+}
+
+.cCaption {
+  font-size: 3vw;
+  color: $colorA;
+}
+
+.cMsg {
+  font-size: 1.4vw;
+  text-decoration: none;
+  color: $colorA;
+}
+
+.cMsgDM {
+  font-size: 1.4vw;
+  text-decoration: none;
+  color: $colorB;
+}
+
+.contactList {
+  width: 70%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7vw 0;
+  li {
+    background-color: rgba(255, 255, 255, 0);
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2, 1.2);
+      background-color: $colorA;
+    }
+  }
+}
+
+#fb:hover {
+  i {
+    color: rgb(66, 103, 178);
+  }
+}
+
+#ins:hover {
+  i {
+    color: rgb(188, 42, 141);
+  }
+}
+
+#yt:hover {
+  i {
+    color: rgb(255, 0, 0);
+  }
+}
+
+#twt:hover {
+  i {
+    color: rgb(0, 172, 238);
+  }
+}
+
+#phn:hover {
+  i {
+    color: rgb(37, 211, 102);
+  }
+}
+
+.contIcon {
+  font-size: 4vw;
+  color: $colorB;
+}
+
+#cBtn {
+  background-color: $colorA;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorB;
+    color: $colorA;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  }
+}
+
+//media queries
+
+@media (max-width: 1080px) {
+  h2 {
+    font-size: 18px;
+  }
+  .caption,
+  .sCaption,
+  .cCaption {
+    font-size: 30px;
+  }
+
+  .shortAbout,
+  .customMsg,
+  .cMsg,
+  .cMsgDM {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .abtLink,
+  .findLink,
+  .customLink {
+    font-size: 14px;
+    font-weight: 450;
+    padding: 8px 12px;
+  }
+  #sText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 920px) {
+  .image {
+    padding-top: 2vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .caption,
+  .sCaption,
+  .cCaption {
+    font-size: 25px;
+  }
+
+  .shortAbout,
+  .customMsg,
+  .cMsg,
+  .cMsgDM {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #sText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .aboutSection,
+  .customSection {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
+    padding: 20px 0 0 0;
+  }
+  .image {
+    padding-top: 30px;
+    width: 75%;
+    img {
+      width: 100%;
+    }
+  }
+  .sBtn {
+    margin-bottom: 20px;
+  }
+  .contactSection {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .showcase {
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: repeat(auto-fill, 294.4px);
+  }
+  .container {
+    height: 294.4px;
+  }
+  #box {
+    font-size: 122.88px;
+  }
+  .boxName {
+    font-size: 15.36px;
+    padding: 6.4px 19.2px;
+  }
+  .sCaption {
+    font-size: 20px;
+  }
+  #sText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .cover .expBtn {
+    border: 3px solid $colorA;
+    h1 {
+      font-size: 22px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .contactList {
+    li {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .cover .expBtn {
+    border: 2.5px solid $colorA;
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .cover h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .expBtn {
+    display: none;
+  }
+  .cover h2 {
+    display: none;
+  }
+}

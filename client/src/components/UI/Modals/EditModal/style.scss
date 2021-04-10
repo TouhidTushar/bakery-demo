@@ -1,0 +1,48 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.editOverlay {
+  position: fixed;
+  top: 0;
+  color: $colorA;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.edit {
+  padding: 14px;
+  background-color: rgba(0, 136, 145, 0.5);
+  backdrop-filter: blur(10px);
+  min-width: 90%;
+  //   min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  #cross {
+    align-self: flex-end;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $colorF;
+      transform: rotate(90deg);
+    }
+  }
+}

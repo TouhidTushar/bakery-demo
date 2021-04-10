@@ -1,0 +1,57 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.signUpConfirmPage {
+  padding: 100px 10px 0 10px;
+  min-height: 100vh;
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.loggedUserMsg {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 10vh auto 0 auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  h1 {
+    color: $colorC;
+    text-align: center;
+  }
+}
+
+.signUpMsgWrapper {
+  margin: 10vh auto 0 auto;
+  padding: 25px;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  #resendMailBtn {
+    border: none;
+    font-size: 14px;
+    background-color: $colorC;
+    color: $colorA;
+    padding: 3px 8px;
+    &:hover {
+      background-color: $colorD;
+    }
+  }
+}

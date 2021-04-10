@@ -1,0 +1,103 @@
+#productPage {
+  min-height: 100vh;
+}
+
+.filterBox {
+  background-color: #008891;
+  padding: 15px;
+}
+
+.filterBox p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.checkBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.allCategory,
+.childCategory {
+  padding: 100px 0 0 0;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.allCategory h1,
+.childCategory h1 {
+  padding: 10px 30px 10px 10px;
+  border-radius: 0 35px 35px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: black;
+  color: white;
+}
+
+.parentCategory {
+  padding-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.parentCategory h1 {
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  border-top: 2px solid black;
+  padding: 10px 0px;
+  background-color: #00587a;
+  color: white;
+}
+
+.productCards {
+  padding-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (270px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 270px);
+  grid-row-gap: 110px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 720px) {
+  .allCategory,
+  .childCategory {
+    padding: 70px 0 0 0;
+  }
+  .allCategory h1,
+  .childCategory h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .parentCategory {
+    padding-top: 58px;
+  }
+  .parentCategory h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=style.css.map */

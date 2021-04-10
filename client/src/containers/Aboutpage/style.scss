@@ -1,0 +1,90 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.aboutPage {
+  padding: 135px 15px 15px 15px;
+  min-height: 100vh;
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    color: $colorD;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .styledList {
+    padding-left: 15px;
+    li {
+      margin: 8px 0;
+      &::before {
+        content: "\2022";
+        color: $colorD;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+  section {
+    width: 40vw;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  .oddSec {
+    align-self: flex-start;
+  }
+  .evenSec {
+    align-self: flex-end;
+  }
+}
+
+#FAQ,
+#terms-conditions,
+#privacy-policy {
+  padding-top: 105px;
+}
+
+#privacy-policy {
+  margin-bottom: 35px;
+}
+
+//media queries
+@media (max-width: 720px) {
+  .aboutPage {
+    padding: 110px 15px 15px 15px;
+    section {
+      width: 60vw;
+    }
+  }
+  #FAQ,
+  #terms-conditions,
+  #privacy-policy {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 460px) {
+  .aboutPage {
+    padding: 100px 15px 15px 15px;
+    section {
+      width: 75vw;
+    }
+  }
+}

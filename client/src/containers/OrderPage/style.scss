@@ -1,0 +1,292 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.orderPageBG {
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.orderPage {
+  padding: 120px 30px 30px 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.orderSummary {
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $colorA;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 2px dashed $colorA;
+  }
+  #orderSum {
+    width: max-content;
+    padding: 8px;
+    background-color: $colorA;
+    color: $colorB;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 550;
+  }
+  td,
+  th {
+    padding-bottom: 5px;
+  }
+  #indCell {
+    padding-right: 5px;
+  }
+  #productNameCell {
+    text-align: left;
+  }
+  thead {
+    height: 35px;
+  }
+  tbody tr {
+    height: 30px;
+  }
+  #finalTotal {
+    width: 100%;
+    border-top: 2px solid $colorA;
+  }
+  p {
+    margin: 0 auto;
+    width: 80%;
+    line-height: 2;
+  }
+  #O-value {
+    float: right;
+  }
+  #cellItemWM {
+    display: none;
+  }
+}
+
+.orderInfo {
+  width: 35%;
+  background-color: rgba(0, 88, 122, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.addressForm {
+  display: flex;
+  flex-direction: column;
+  #oderInfoTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 550;
+    margin-bottom: 15px;
+    color: $colorA;
+  }
+  label {
+    font-weight: 500;
+    margin-top: 15px;
+    color: $colorA;
+  }
+  input,
+  textarea {
+    height: 25px;
+    color: $colorA;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 5px;
+    transition: all 0.4s ease;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $colorA;
+    }
+    &:invalid {
+      box-shadow: 0 0 0 rgba(91, 192, 190, 0.3);
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  textarea:focus {
+    height: 50px;
+  }
+  textarea:placeholder-shown {
+    font-size: 14px;
+  }
+  p {
+    font-weight: 500;
+    margin: 15px 0 8px 0;
+    color: $colorA;
+  }
+}
+
+.paymentInfo,
+.saveInfo {
+  input {
+    vertical-align: middle;
+    margin-bottom: 3px;
+  }
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+}
+
+.orderBtnDiv {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#placeOrder {
+  font-size: 16px;
+  padding: 8px 10px;
+  background-color: $colorA;
+  border: none;
+  color: $colorB;
+  margin-right: 8px;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+    background-color: $colorB;
+    color: $colorA;
+  }
+}
+
+#cancelOrder {
+  font-size: 16px;
+  padding: 6px 10px;
+  background-color: $colorA;
+  border: none;
+  border: 2px solid $colorF;
+  color: $colorF;
+  margin-left: 8px;
+  &:hover {
+    background-color: $colorF;
+    color: $colorA;
+  }
+}
+
+//media queries
+@media (max-width: 960px) {
+  .orderPage {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    margin-top: 25px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  .orderPage {
+    padding: 90px 30px 30px 30px;
+  }
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    width: 85%;
+  }
+}
+
+@media (max-width: 460px) {
+  .orderPage {
+    padding: 70px 0 30px 0;
+  }
+  #productNameCell {
+    padding-left: 8px;
+  }
+  #optionalField {
+    display: none;
+  }
+  .orderSummary {
+    width: 90%;
+    padding: 10px;
+    #cellItemWM {
+      display: unset;
+    }
+  }
+  .orderInfo {
+    width: 90%;
+    padding: 10px;
+  }
+  .addressForm {
+    #oderInfoTitle {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 550;
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: 500;
+      margin-top: 15px;
+    }
+    input,
+    textarea {
+      font-size: 16px;
+    }
+    p {
+      font-weight: 550;
+      margin-top: 15px;
+    }
+  }
+  .paymentInfo,
+  .saveInfo {
+    input {
+      vertical-align: middle;
+      margin-bottom: 3px;
+    }
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 15px;
+    }
+  }
+  .orderBtnDiv {
+    button,
+    a {
+      transform: scale(0.9, 0.9);
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  .orderInfo {
+    textarea:placeholder-shown {
+      height: 35px;
+    }
+  }
+}

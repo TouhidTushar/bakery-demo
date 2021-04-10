@@ -1,0 +1,62 @@
+.signUpConfirmPage {
+  padding: 100px 10px 0 10px;
+  min-height: 100vh;
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.loggedUserMsg {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 10vh auto 0 auto;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.loggedUserMsg h1 {
+  color: #008891;
+  text-align: center;
+}
+
+.signUpMsgWrapper {
+  margin: 10vh auto 0 auto;
+  padding: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.signUpMsgWrapper h1 {
+  margin-bottom: 20px;
+}
+
+.signUpMsgWrapper p {
+  line-height: 1.5;
+}
+
+.signUpMsgWrapper #resendMailBtn {
+  border: none;
+  font-size: 14px;
+  background-color: #008891;
+  color: white;
+  padding: 3px 8px;
+}
+
+.signUpMsgWrapper #resendMailBtn:hover {
+  background-color: #00587a;
+}
+/*# sourceMappingURL=style.css.map */

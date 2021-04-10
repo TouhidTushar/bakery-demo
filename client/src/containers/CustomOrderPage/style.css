@@ -1,0 +1,186 @@
+.customOrderPage {
+  padding: 100px 15px 15px 15px;
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom right;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.customOrderForm {
+  width: 420px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 25px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 136, 145, 0.8)), to(rgba(0, 88, 122, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(0, 136, 145, 0.8), rgba(0, 88, 122, 0.8));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.customOrderForm h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 15px auto;
+  font-size: 22px;
+}
+
+.customOrderForm label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customOrderForm #radioLabel {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customOrderForm input[type="text"] {
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 15px 0;
+  padding-left: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.customOrderForm input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.customOrderForm input[type="text"]:invalid {
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.customOrderForm textarea {
+  width: 100%;
+  height: 25px;
+  resize: none;
+  margin: 5px 0 15px 0;
+  padding-left: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.customOrderForm textarea:focus {
+  height: 50px;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.customOrderForm textarea:invalid {
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.customOrderForm textarea:placeholder-shown {
+  font-size: 14px;
+}
+
+.customOrderForm textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.customOrderForm textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.customOrderForm textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.customOrderForm textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.customOrderForm input[type="file"] {
+  margin: 8px 0 15px 0;
+  font-size: 14px;
+}
+
+.customOrderForm button {
+  margin: 0 auto;
+  border: none;
+  padding: 8px 12px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.customOrderForm button:hover {
+  background-color: black;
+  color: white;
+}
+
+#userFileLabel {
+  margin-top: 15px;
+}
+
+@media (max-width: 720px) {
+  .customOrderPage {
+    padding: 75px 15px 15px 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .customOrderForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .customOrderForm h2 {
+    font-size: 20px;
+  }
+  .customOrderForm button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .customOrderPage {
+    padding: 65px 15px 15px 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .customOrderForm {
+    width: 230px;
+    margin: 0 auto;
+  }
+  .customOrderForm label,
+  .customOrderForm #radioLabel {
+    font-size: 14px;
+    font-weight: 450;
+  }
+  .customOrderForm input {
+    font-size: 14px;
+  }
+  .customOrderForm textarea {
+    font-size: 14px;
+  }
+  .customOrderForm textarea:placeholder-shown {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

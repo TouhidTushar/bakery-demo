@@ -1,0 +1,392 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.productDetailsPage {
+  padding: 100px 25px 25px 25px;
+  min-height: 100vh;
+  .fa-star {
+    color: $colorC;
+  }
+}
+
+.productWrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.imgSlider {
+  position: relative;
+  width: 27vw;
+  height: 36vw;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $colorA;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.imgContainer {
+  display: flex;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navLeft,
+.navRight {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  height: 2vw;
+  width: 2vw;
+  border: 2px solid $colorB;
+  background-color: $colorA;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.navLeft {
+  left: 5px;
+}
+
+.navRight {
+  right: 5px;
+}
+
+.picCarousel {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 27vw;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  span {
+    width: 1vw;
+    height: 1vw;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid $colorA;
+  }
+}
+
+.productDetailsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40vw;
+  min-height: 36vw;
+  padding: 15px 15px 15px 40px;
+  border-left: 4px solid $colorD;
+  h1 {
+    color: $colorD;
+    margin-bottom: 25px;
+    font-size: 2.5vw;
+  }
+  .p-attr {
+    font-size: 1.2vw;
+    // text-align: justify;
+    margin-bottom: 15px;
+  }
+  button {
+    font-size: 1.5vw;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 15px;
+    color: $colorA;
+    background-color: $colorC;
+    &:hover {
+      transform: scale(0.9, 0.9);
+    }
+  }
+}
+
+.price-Btn {
+  display: flex;
+}
+
+#itemPrice {
+  width: max-content;
+  font-size: 1.5vw;
+  border: 2px solid $colorC;
+  padding: 6px 12px;
+  color: $colorC;
+}
+
+//review section
+.reviewSection {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 0 auto;
+  width: max-content;
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  #reviewLabel {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .ratingInput {
+    width: max-content;
+    padding-left: 20px;
+  }
+  input[type="radio"] {
+    margin: 0 10px 0 10px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  #notRatedMsg {
+    font-size: 16px;
+    color: $colorF;
+    margin: 5px;
+    width: max-content;
+    padding-left: 20px;
+  }
+  textarea {
+    resize: none;
+    width: 70vw;
+    padding: 5px;
+    border: 2px solid $colorB;
+    border-radius: 10px;
+    height: 60px;
+    &:focus {
+      outline: none;
+    }
+    &:placeholder-shown {
+      font-size: 14px;
+    }
+    &::placeholder {
+      color: $colorF;
+      opacity: 1;
+    }
+  }
+  button {
+    width: max-content;
+    padding: 6px 16px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    color: $colorA;
+    background-color: $colorC;
+    &:hover {
+      transform: scale(0.9, 0.9);
+    }
+  }
+}
+
+#revBorder {
+  border-bottom: 8px solid $colorD;
+}
+
+.starWrapper {
+  position: relative;
+  height: 20px;
+}
+
+.rating-label {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  pointer-events: none;
+  i {
+    font-size: 20px;
+  }
+}
+
+.userReview {
+  margin: 10px 0px;
+  padding: 25px;
+  .revInfo {
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+}
+
+.revUser {
+  display: inline;
+  font-size: 24px;
+  font-weight: 600;
+  color: $colorD;
+  margin-bottom: 15px;
+}
+
+#highlightReview {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.revAction {
+  margin-left: 20px;
+  i {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+
+.no-deleteOverlay {
+  display: none;
+}
+
+.deleteOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  .delReview {
+    border: 2px solid $colorF;
+    background-color: $colorA;
+    color: $colorF;
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover {
+      background-color: $colorF;
+      color: $colorA;
+    }
+  }
+  .cancelDelReview {
+    border: 2px solid $colorC;
+    background-color: $colorA;
+    color: $colorC;
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover {
+      background-color: $colorC;
+      color: $colorA;
+    }
+  }
+}
+
+//media queries
+@media (max-width: 1020px) {
+  .productDetailsContainer {
+    h1 {
+      font-size: 25px;
+    }
+    .p-attr {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .productDetailsPage {
+    padding: 80px 25px 25px 25px;
+  }
+  .productWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgSlider {
+    width: 360px;
+    height: 480px;
+    margin-bottom: 30px;
+  }
+  .navLeft,
+  .navRight {
+    height: 25px;
+    width: 25px;
+  }
+  .picCarousel {
+    width: 360px;
+    span {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .productDetailsContainer {
+    width: 320px;
+    padding: 15px 25px;
+    border-right: 4px solid $colorD;
+    button {
+      font-size: 14px;
+    }
+  }
+
+  #itemPrice {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 460px) {
+  .productDetailsPage {
+    padding: 70px 20px 20px 20px;
+  }
+  .imgSlider {
+    width: 252px;
+    height: 336px;
+    margin-bottom: 25px;
+  }
+  .navLeft,
+  .navRight {
+    height: 20px;
+    width: 20px;
+  }
+  .picCarousel {
+    width: 252px;
+  }
+  .productDetailsContainer {
+    width: 225px;
+    button {
+      margin: 15px 0 0 0;
+    }
+  }
+  .reviewForm {
+    padding: 25px 0;
+    textarea {
+      width: 240px;
+      height: 45px;
+    }
+  }
+  .userReview {
+    padding: 15px;
+    .revInfo {
+      padding-left: 30px;
+      margin-top: 10px;
+    }
+  }
+  .price-Btn {
+    flex-direction: column;
+  }
+  .revUser {
+    font-size: 20px;
+    font-weight: 550;
+  }
+}

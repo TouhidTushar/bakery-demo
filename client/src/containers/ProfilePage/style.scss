@@ -1,0 +1,315 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.profilePage {
+  min-height: 100vh;
+  padding: 87px 0px 0px 0px;
+}
+
+.profilePageAlt {
+  min-height: 100vh;
+  padding: 87px 0px 0px 0px;
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.profileSection {
+  background-image: linear-gradient(to bottom, $colorC, $colorD);
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userName {
+  font-size: 32px;
+  font-weight: 550;
+  color: $colorA;
+  text-align: center;
+  padding: 25px 0 0 0;
+  text-shadow: 1px 1px 2px $colorB;
+}
+
+.editProfile {
+  border: none;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    color: $colorA;
+  }
+}
+
+.changePass {
+  border: none;
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover {
+    color: $colorA;
+  }
+}
+
+.passChngWrapper {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.passChngForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    border: none;
+    width: 65%;
+    height: 20px;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+    padding-left: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#c-message {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+}
+
+.profileRender {
+  background-color: $colorA;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  width: max-content;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.editRender {
+  background-color: $colorA;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  width: max-content;
+  margin-top: 49px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.editProfileForm {
+  div,
+  p {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .indent {
+    display: inline-block;
+    width: 20%;
+  }
+  input {
+    width: 78%;
+    border: none;
+    font-size: 16px;
+    opacity: 0.5;
+    border-bottom: 2px solid $colorC;
+    &:focus {
+      outline: none;
+      opacity: 1;
+    }
+  }
+}
+
+.profileEditBtns {
+  display: flex;
+  justify-content: center;
+  button {
+    border: none;
+    font-size: 16px;
+    padding: 6px 12px;
+    &:hover {
+      transform: scale(0.9, 0.9);
+    }
+  }
+  .saveProfile {
+    background-color: $colorC;
+    color: $colorA;
+    margin-right: 5px;
+  }
+  .cancelProfile {
+    background-color: $colorB;
+    color: $colorA;
+    margin-left: 5px;
+  }
+}
+
+#order-history {
+  padding: 105px 10px 30px 10px;
+  .MyOrders {
+    font-size: 30px;
+    font-weight: 550;
+    width: max-content;
+    margin: 0 auto 25px auto;
+    color: $colorC;
+    text-shadow: 1px 1px 1px $colorB;
+  }
+}
+
+.orderWrapper {
+  position: relative;
+  width: 80vw;
+  padding: 15px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  span {
+    width: 25vw;
+  }
+  button {
+    border: 1px solid $colorB;
+    font-size: 14px;
+    background-color: $colorA;
+    padding: 3px 8px;
+    border-radius: 15px;
+    &:hover {
+      background-color: $colorB;
+      color: $colorA;
+    }
+  }
+}
+
+#oddBox {
+  background-color: rgba(0, 136, 145, 0.2);
+}
+
+#evenBox {
+  background-color: rgba(0, 136, 145, 0.5);
+}
+
+#latestMarker {
+  position: absolute;
+  width: max-content;
+  top: -15px;
+  left: 5px;
+  background-color: $colorD;
+  color: $colorA;
+  padding: 3px 8px;
+}
+
+.orderDetailsBox {
+  display: none;
+  top: 100%;
+  left: 0;
+}
+
+.orderDetailsBoxActive {
+  width: 80vw;
+  padding: 15px;
+  margin: 0 auto;
+  z-index: 2;
+  background-color: $colorA;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.nonLoggedProfile {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 10vh auto 0 auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  color: $colorC;
+}
+
+//media queries
+@media (max-width: 720px) {
+  .profilePage {
+    min-height: 100vh;
+    padding: 57px 0px 0px 0px;
+  }
+  .orderWrapper {
+    font-size: 14px;
+    span {
+      margin-right: 10px;
+    }
+    button {
+      font-size: 12px;
+      min-width: 70px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .editRender {
+    width: 85%;
+    padding: 15px;
+  }
+  .editProfileForm {
+    p,
+    label {
+      font-size: 14px;
+    }
+    .indent {
+      width: 70px;
+    }
+    input {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .profilePage {
+    min-height: 100vh;
+    padding: 47px 0px 0px 0px;
+  }
+  .orderWrapper {
+    font-size: 14px;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .editProfileForm {
+    input {
+      font-size: 14px;
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .editProfileForm {
+    input {
+      font-size: 14px;
+      width: 65%;
+    }
+  }
+  .orderWrapper {
+    button {
+      font-size: 12px;
+      min-width: 0px;
+      max-width: 60px;
+      padding: 3px 5px;
+      i {
+        display: none;
+      }
+    }
+  }
+}

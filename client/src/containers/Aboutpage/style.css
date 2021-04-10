@@ -1,0 +1,99 @@
+.aboutPage {
+  padding: 135px 15px 15px 15px;
+  min-height: 100vh;
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutPage h1 {
+  color: #00587a;
+  margin-bottom: 10px;
+}
+
+.aboutPage p {
+  line-height: 1.5;
+}
+
+.aboutPage .styledList {
+  padding-left: 15px;
+}
+
+.aboutPage .styledList li {
+  margin: 8px 0;
+}
+
+.aboutPage .styledList li::before {
+  content: "\2022";
+  color: #00587a;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.aboutPage section {
+  width: 40vw;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.aboutPage .oddSec {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.aboutPage .evenSec {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#FAQ,
+#terms-conditions,
+#privacy-policy {
+  padding-top: 105px;
+}
+
+#privacy-policy {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 720px) {
+  .aboutPage {
+    padding: 110px 15px 15px 15px;
+  }
+  .aboutPage section {
+    width: 60vw;
+  }
+  #FAQ,
+  #terms-conditions,
+  #privacy-policy {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 460px) {
+  .aboutPage {
+    padding: 100px 15px 15px 15px;
+  }
+  .aboutPage section {
+    width: 75vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
