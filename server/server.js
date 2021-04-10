@@ -18,7 +18,7 @@ const initialDataRoutes = require("./src/routes/admin/initialData");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 8080; //port
+const port = process.env.PORT || 5000; //port
 
 //database connection
 const uri = process.env.ATLAS_URI;
