@@ -1,0 +1,93 @@
+.mainSection {
+  padding-top: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sideBar {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  width: 230px;
+  background-color: silver;
+  border-right: 1px solid gray;
+  -webkit-box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+#dashLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 25px auto 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#dashLink i {
+  margin-right: 8px;
+}
+
+.adminLinks {
+  margin: 20px 0 0 70px;
+  list-style: none;
+  width: 70%;
+  font-size: 20px;
+}
+
+.adminLinks li {
+  margin: 8px 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: 245px;
+  padding: 15px 15px 0 0;
+}
+
+.linkInactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.linkInactive i {
+  margin-right: 8px;
+}
+
+.linkActive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.linkActive i {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */

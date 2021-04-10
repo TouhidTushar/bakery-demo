@@ -1,0 +1,120 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+$colorE: rgb(0, 128, 128);
+$colorF: rgb(178, 59, 59);
+
+.navBar {
+  position: fixed;
+  z-index: 5;
+  height: 60px;
+  width: 100%;
+  background-color: $colorB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $colorA;
+    }
+  }
+}
+
+.mainLink {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 15px;
+  color: $colorA;
+}
+
+.navLink {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+  li {
+    list-style: none;
+    a {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.bars {
+  color: $colorA;
+  margin-right: 15px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  i {
+    font-size: 18px;
+  }
+}
+
+.dropDownNav {
+  position: fixed;
+  z-index: 4;
+  top: 60px;
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  background-color: $colorC;
+  transition: all 0.5s ease;
+  transform: translateY(-65px);
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $colorC;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.dropActive {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 60px;
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  background-color: $colorC;
+  transition: all 0.5s ease;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+      &:hover {
+        color: $colorB;
+      }
+    }
+  }
+}
+
+#signOutBtn {
+  border: none;
+  background-color: $colorF;
+  color: $colorA;
+  font-size: 16px;
+  padding: 4px 6px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+//media queries
+@media (max-width: 420px) {
+  .navLink {
+    display: none;
+  }
+  .bars,
+  .dropActive {
+    display: block;
+  }
+}

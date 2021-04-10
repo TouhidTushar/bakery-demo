@@ -1,0 +1,94 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+$colorE: rgb(0, 128, 128);
+$colorF: rgb(178, 59, 59);
+
+.productDetails {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 3px 0;
+  }
+}
+
+.productPic {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prodPicContainer {
+  width: 25%;
+  margin-right: 8px;
+  padding: 5px 5px 1px 5px;
+  border-radius: 5px;
+  background-color: $colorA;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
+}
+
+.prodImage {
+  width: 100%;
+}
+
+.dltProd {
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-top: 15px;
+  border: 1px solid $colorF;
+  color: $colorF;
+  font-size: 24px;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: $colorF;
+    color: $colorA;
+  }
+}
+
+.confirmDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  button {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 6px 10px;
+  }
+}
+
+.Delete {
+  border: 1px solid $colorF;
+  color: $colorF;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorF;
+    color: $colorA;
+  }
+}
+
+.Cancel {
+  border: 1px solid $colorE;
+  color: $colorE;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorE;
+    color: $colorA;
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .addProdFormBG {
+    width: 300px;
+    padding: 20px;
+  }
+}

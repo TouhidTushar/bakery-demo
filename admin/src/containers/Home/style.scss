@@ -1,0 +1,22 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+$colorE: rgb(0, 128, 128);
+$colorF: rgb(178, 59, 59);
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $colorB;
+  border-bottom: 2px solid $colorE;
+  border-left: 2px solid $colorE;
+  border-radius: 0 0 50px 50px;
+  padding: 25px 0px;
+  p {
+    margin-top: 15px;
+  }
+}

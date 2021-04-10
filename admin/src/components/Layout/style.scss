@@ -1,0 +1,76 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+$colorE: rgb(0, 128, 128);
+$colorF: rgb(178, 59, 59);
+
+.mainSection {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+}
+
+.sideBar {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  width: 230px;
+  background-color: $colorD;
+  border-right: 1px solid $colorC;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+#dashLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 25px auto 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  i {
+    margin-right: 8px;
+  }
+}
+
+.adminLinks {
+  margin: 20px 0 0 70px;
+  list-style: none;
+  width: 70%;
+  font-size: 20px;
+  li {
+    margin: 8px 0;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: 245px;
+  padding: 15px 15px 0 0;
+}
+
+.linkInactive {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: $colorB;
+  i {
+    margin-right: 8px;
+  }
+  transition: all 0.3s ease;
+}
+
+.linkActive {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: $colorA;
+  background-color: $colorB;
+  i {
+    margin-right: 8px;
+  }
+  transition: all 0.3s ease;
+}

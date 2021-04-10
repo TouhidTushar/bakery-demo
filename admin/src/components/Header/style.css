@@ -1,0 +1,142 @@
+.navBar {
+  position: fixed;
+  z-index: 5;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  color: white;
+}
+
+.mainLink {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 15px;
+  color: white;
+}
+
+.navLink {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navLink li {
+  list-style: none;
+}
+
+.navLink li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bars {
+  color: white;
+  margin-right: 15px;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.bars i {
+  font-size: 18px;
+}
+
+.dropDownNav {
+  position: fixed;
+  z-index: 4;
+  top: 60px;
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  background-color: gray;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
+}
+
+.dropDownNav li {
+  list-style: none;
+}
+
+.dropDownNav li a {
+  text-decoration: none;
+  color: gray;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropActive {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 60px;
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  background-color: gray;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dropActive li {
+  list-style: none;
+}
+
+.dropActive li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dropActive li a:hover {
+  color: black;
+}
+
+#signOutBtn {
+  border: none;
+  background-color: #b23b3b;
+  color: white;
+  font-size: 16px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+#signOutBtn:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+@media (max-width: 420px) {
+  .navLink {
+    display: none;
+  }
+  .bars,
+  .dropActive {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

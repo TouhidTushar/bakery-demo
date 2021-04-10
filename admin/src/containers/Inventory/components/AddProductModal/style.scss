@@ -1,0 +1,38 @@
+$colorA: rgb(255, 255, 255);
+$colorE: rgb(0, 128, 128);
+
+.addProdForm {
+  display: flex;
+  flex-direction: column;
+  input,
+  select {
+    height: 26px;
+    margin: 6px 0 15px 0;
+    font-size: 14px;
+  }
+  textarea {
+    height: 50px;
+    resize: none;
+    width: 350px;
+    margin: 6px 0 15px 0;
+    font-size: 14px;
+  }
+}
+
+#prodImg {
+  margin-bottom: 5px;
+}
+
+.addProd {
+  align-self: center;
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  margin-top: 5px;
+  width: 65px;
+  background-color: $colorE;
+  color: $colorA;
+  &:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
