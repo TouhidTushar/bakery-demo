@@ -1,0 +1,156 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+$colorE: rgb(0, 128, 128);
+$colorF: rgb(178, 59, 59);
+
+.contTitle {
+  width: 100%;
+  background-color: $colorE;
+  padding: 20px 0;
+  text-align: center;
+  color: $colorA;
+}
+
+.category {
+  background-color: rgba(192, 192, 192, 0.3);
+  padding: 20px 10px;
+}
+
+.products {
+  padding: 20px 10px;
+}
+
+.subSections {
+  margin-bottom: 10px;
+}
+
+.actionBtn {
+  margin-right: 8px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid $colorB;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: $colorB;
+    color: $colorA;
+  }
+}
+
+.delBtn {
+  margin-right: 8px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid $colorF;
+  color: $colorF;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: $colorF;
+    color: $colorA;
+  }
+}
+
+.categoryTree {
+  margin: 10px 0 0 20px;
+}
+
+.productTable {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  height: 35px;
+  background-color: $colorB;
+  color: $colorA;
+  border: 1px solid $colorA;
+}
+
+table,
+td {
+  height: 25px;
+  border: 1px solid $colorB;
+}
+
+.updCatForm {
+  display: flex;
+  flex-direction: column;
+  input,
+  select {
+    height: 24px;
+    width: 200px;
+    margin: 3px 0;
+    font-size: 15px;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.expanded,
+.checked {
+  margin-bottom: 15px;
+}
+
+.updCat {
+  align-self: center;
+  border: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  width: max-content;
+  background-color: rgb(0, 128, 128);
+  color: $colorA;
+  &:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+.itemsForDel {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.confirmMsg {
+  color: $colorF;
+  margin: 15px 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.confirmBtns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete {
+  border: 1px solid $colorF;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 6px 10px;
+  color: $colorF;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorF;
+    color: $colorA;
+  }
+}
+
+.cancel {
+  border: 1px solid $colorE;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: $colorE;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $colorE;
+    color: $colorA;
+  }
+}

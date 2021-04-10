@@ -1,0 +1,35 @@
+.addCatForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.addCatForm input,
+.addCatForm select {
+  height: 30px;
+  width: 350px;
+  margin: 8px 0 20px 0;
+  font-size: 16px;
+}
+
+.addCat {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  width: 80px;
+  background-color: teal;
+  color: white;
+}
+
+.addCat:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+/*# sourceMappingURL=style.css.map */

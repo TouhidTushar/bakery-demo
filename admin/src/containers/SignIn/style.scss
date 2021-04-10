@@ -1,0 +1,55 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(128, 128, 128);
+$colorD: rgb(192, 192, 192);
+
+.signInFormSection {
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInForm {
+  background-color: $colorD;
+  width: 40vw;
+  margin-top: 20vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  label {
+    align-self: start;
+  }
+  input {
+    width: 100%;
+    height: 24px;
+    margin: 8px 0 20px 0;
+  }
+}
+
+#signInBtn {
+  background-color: $colorB;
+  color: $colorA;
+  font-size: 18px;
+  border: none;
+  padding: 6px 15px;
+  &:hover {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+//media queries
+@media (max-width: 1080px) {
+  .signInForm {
+    width: 420px;
+  }
+}
+
+@media (max-width: 530px) {
+  .signInForm {
+    width: 320px;
+  }
+}

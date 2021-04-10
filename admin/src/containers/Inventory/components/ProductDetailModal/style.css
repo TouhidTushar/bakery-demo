@@ -1,0 +1,114 @@
+.productDetails {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.productDetails p {
+  margin: 3px 0;
+}
+
+.productPic {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.prodPicContainer {
+  width: 25%;
+  margin-right: 8px;
+  padding: 5px 5px 1px 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
+}
+
+.prodImage {
+  width: 100%;
+}
+
+.dltProd {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 15px;
+  border: 1px solid #b23b3b;
+  color: #b23b3b;
+  font-size: 24px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.dltProd:hover {
+  background-color: #b23b3b;
+  color: white;
+}
+
+.confirmDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.confirmDiv button {
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 6px 10px;
+}
+
+.Delete {
+  border: 1px solid #b23b3b;
+  color: #b23b3b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Delete:hover {
+  background-color: #b23b3b;
+  color: white;
+}
+
+.Cancel {
+  border: 1px solid teal;
+  color: teal;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Cancel:hover {
+  background-color: teal;
+  color: white;
+}
+
+.noDisplay {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .addProdFormBG {
+    width: 300px;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

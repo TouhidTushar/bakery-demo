@@ -1,0 +1,56 @@
+$colorD: rgb(192, 192, 192);
+$colorF: rgb(178, 59, 59);
+
+.modalOverlay {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalWrapper {
+  border-bottom: 25px solid $colorD;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.modalBody {
+  width: max-content;
+  margin: 0 auto;
+  max-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  border-top: 25px solid $colorD;
+  padding: 0 25px;
+  background-color: $colorD;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.modalHeader {
+  margin: 5vw auto 0 auto;
+  width: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: $colorD;
+  padding: 20px 40px 10px 40px;
+  border-radius: 60px 60px 0 0;
+}
+
+#modalCloseBtn {
+  align-self: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $colorF;
+    transform: rotate(90deg);
+  }
+}
+
+.modalTitle {
+  margin-right: 25px;
+  font-size: 22px;
+}

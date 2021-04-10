@@ -1,0 +1,68 @@
+.signUpFormSection {
+  padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signUpForm {
+  background-color: silver;
+  width: 40vw;
+  margin-top: 20vh;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signUpForm input {
+  width: 100%;
+  height: 24px;
+  margin: 8px 0 20px 0;
+}
+
+#nameLabel,
+#firstName,
+#lastName {
+  width: 49%;
+}
+
+#signUpBtn {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 6px 15px;
+  margin: 0 auto;
+}
+
+#signUpBtn:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+@media (max-width: 1080px) {
+  .signUpForm {
+    width: 420px;
+  }
+}
+
+@media (max-width: 530px) {
+  .signUpForm {
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
