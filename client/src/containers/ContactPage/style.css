@@ -1,0 +1,476 @@
+.contactPage {
+  padding: 105px 15px 15px 15px;
+}
+
+.contactPage h1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  margin: 0 auto 25px auto;
+}
+
+.orderTracking {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00587a), to(#008891));
+  background-image: linear-gradient(to bottom, #00587a, #008891);
+  padding: 50px 10px;
+}
+
+.orderTracking .trackMsg {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.trackOrderForm {
+  max-width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.trackOrderForm input {
+  height: 40px;
+  font-size: 18px;
+  padding-left: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.trackOrderForm .trackBtn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 8px;
+  border: none;
+  background-color: white;
+  color: #00587a;
+  border: 2px solid #00587a;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.trackOrderForm .trackBtn:hover {
+  background-color: #00587a;
+  color: white;
+}
+
+.ordDetails {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: white;
+  padding: 25px;
+  margin: 15px auto 0 auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.orderStatusBar {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 20px;
+  border-left: 5px solid #00587a;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+.progressBar {
+  position: relative;
+  height: 20px;
+  width: 20%;
+  background-color: transparent;
+}
+
+.progressBar p {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #00587a;
+  left: 40%;
+  bottom: -30px;
+}
+
+.progressBarActive {
+  position: relative;
+  height: 20px;
+  width: 20%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00587a), color-stop(rgba(0, 88, 122, 0.9)), to(#00587a));
+  background-image: linear-gradient(to bottom, #00587a, rgba(0, 88, 122, 0.9), #00587a);
+}
+
+.progressBarActive p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #00587a;
+  left: 40%;
+  bottom: -30px;
+}
+
+.progressIcon {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.progressIconActive {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: #00587a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.location {
+  padding: 105px 10px;
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.locationMap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.locationMap iframe {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.dmSection {
+  padding: 105px 10px 50px 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00587a), to(#008891));
+  background-image: linear-gradient(to top, #00587a, #008891);
+}
+
+.dmSection p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  margin: 100px auto 0 auto;
+}
+
+.directMailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.directMailForm label {
+  color: white;
+  font-size: 18px;
+}
+
+.directMailForm input {
+  height: 30px;
+  padding-left: 5px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.directMailForm input:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+.directMailForm input:invalid {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.directMailForm textarea {
+  height: 100px;
+  resize: none;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.directMailForm textarea:focus {
+  outline: none;
+}
+
+.directMailForm textarea:invalid {
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.directMailForm #dmBtn {
+  border: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 6px 10px;
+  color: #00587a;
+  background-color: white;
+  border: 2px solid #00587a;
+}
+
+.directMailForm #dmBtn:hover {
+  color: white;
+  background-color: #00587a;
+}
+
+.contactListM {
+  width: 70%;
+  height: 7vw;
+  margin: 0 auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7vw 0;
+}
+
+.contactListM li {
+  background-color: rgba(255, 255, 255, 0);
+  width: 5vw;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contactListM li:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  background-color: white;
+}
+
+#fb:hover i {
+  color: #4267b2;
+}
+
+#ins:hover i {
+  color: #bc2a8d;
+}
+
+#yt:hover i {
+  color: red;
+}
+
+#twt:hover i {
+  color: #00acee;
+}
+
+#phn:hover i {
+  color: #25d366;
+}
+
+.contIcon {
+  font-size: 3vw;
+  color: black;
+}
+
+#progressIconDetails {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .contactPage {
+    padding: 75px 15px 15px 15px;
+  }
+  .contIcon {
+    font-size: 20px;
+    color: black;
+  }
+  .contactListM li {
+    width: 40px;
+    height: 40px;
+  }
+  .location {
+    padding: 75px 10px 50px 10px;
+  }
+  .dmSection {
+    border-top: 25px solid white;
+  }
+  .dmSection p {
+    font-size: 24px;
+  }
+  .orderStatusBar {
+    margin: 15px 0;
+    width: 300px;
+    height: 15px;
+  }
+  .progressBar {
+    height: 15px;
+  }
+  .progressBar p {
+    font-size: 12px;
+    font-weight: 450;
+    left: 35.5%;
+    bottom: -25px;
+  }
+  .progressBarActive {
+    height: 15px;
+  }
+  .progressBarActive p {
+    font-size: 12px;
+    font-weight: 450;
+    left: 35.5%;
+    bottom: -25px;
+  }
+  .progressIcon {
+    top: -7.5px;
+    right: -5.5px;
+    width: 30px;
+    height: 30px;
+  }
+  .progressIconActive {
+    top: -7.5px;
+    right: -5.5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contactPage {
+    padding: 65px 15px 15px 15px;
+  }
+  .ordDetails {
+    width: 220px;
+    padding: 15px;
+  }
+  .location {
+    padding: 65px 10px 50px 10px;
+  }
+  .dmSection {
+    border-top: 15px solid white;
+  }
+  .dmSection p {
+    font-size: 18px;
+  }
+  #showItemsBox {
+    width: 200px;
+  }
+  .orderStatusBar {
+    position: relative;
+    margin: 15px 0;
+    width: 210px;
+    height: 10px;
+  }
+  .progressBar {
+    height: 10px;
+  }
+  .progressBar p {
+    display: none;
+  }
+  #progressIconDetails {
+    display: block;
+  }
+  .progressBarActive {
+    height: 10px;
+  }
+  .progressBarActive p {
+    display: none;
+  }
+  .progressIcon {
+    top: -7.5px;
+    right: -5.5px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .progressIconActive {
+    top: -7.5px;
+    right: -5.5px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

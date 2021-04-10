@@ -1,0 +1,135 @@
+.orderConPageBG {
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.orderConfirmPage {
+  padding: 100px 0 30px 0;
+  min-height: 100vh;
+}
+
+.orderConfirmMsg {
+  width: 700px;
+  margin: 0 auto;
+  background-color: rgba(0, 136, 145, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.orderConfirmMsg h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.orderConfirmMsg p {
+  line-height: 2;
+}
+
+.orderConfirmMsg #instructionMsg {
+  color: #f05454;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.orderConfirmMsg .orderID {
+  color: black;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.orderConfirmMsg #Order-ID {
+  background-color: transparent;
+  border: none;
+  color: black;
+  width: 120px;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.orderConfirmMsg #Order-ID:focus {
+  outline: none;
+}
+
+.orderConfirmMsg #copyBtn {
+  font-size: 14px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 4px 10px;
+}
+
+.orderConfirmMsg #contLink {
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+
+.orderConfirmMsg #contLink:hover {
+  background-color: #00587a;
+  color: white;
+}
+
+.orderConfirmMsg .trackMsg {
+  margin-bottom: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent;
+  border-top-color: transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 950px) {
+  .orderConfirmMsg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 585px) {
+  .orderConfirmMsg #orderID {
+    color: black;
+    font-weight: 550;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

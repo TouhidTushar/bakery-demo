@@ -1,0 +1,349 @@
+.orderPageBG {
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.orderPage {
+  padding: 120px 30px 30px 30px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.orderSummary {
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.orderSummary table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-bottom: 2px dashed white;
+}
+
+.orderSummary #orderSum {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.orderSummary td,
+.orderSummary th {
+  padding-bottom: 5px;
+}
+
+.orderSummary #indCell {
+  padding-right: 5px;
+}
+
+.orderSummary #productNameCell {
+  text-align: left;
+}
+
+.orderSummary thead {
+  height: 35px;
+}
+
+.orderSummary tbody tr {
+  height: 30px;
+}
+
+.orderSummary #finalTotal {
+  width: 100%;
+  border-top: 2px solid white;
+}
+
+.orderSummary p {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 2;
+}
+
+.orderSummary #O-value {
+  float: right;
+}
+
+.orderSummary #cellItemWM {
+  display: none;
+}
+
+.orderInfo {
+  width: 35%;
+  background-color: rgba(0, 88, 122, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.addressForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.addressForm #oderInfoTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 550;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.addressForm label {
+  font-weight: 500;
+  margin-top: 15px;
+  color: white;
+}
+
+.addressForm input,
+.addressForm textarea {
+  height: 25px;
+  color: white;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  font-size: 18px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.addressForm input:focus,
+.addressForm textarea:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+.addressForm input:invalid,
+.addressForm textarea:invalid {
+  -webkit-box-shadow: 0 0 0 rgba(91, 192, 190, 0.3);
+          box-shadow: 0 0 0 rgba(91, 192, 190, 0.3);
+}
+
+.addressForm input::-webkit-input-placeholder,
+.addressForm textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.addressForm input:-ms-input-placeholder,
+.addressForm textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.addressForm input::-ms-input-placeholder,
+.addressForm textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.addressForm input::placeholder,
+.addressForm textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.addressForm textarea:focus {
+  height: 50px;
+}
+
+.addressForm textarea:placeholder-shown {
+  font-size: 14px;
+}
+
+.addressForm p {
+  font-weight: 500;
+  margin: 15px 0 8px 0;
+  color: white;
+}
+
+.paymentInfo input,
+.saveInfo input {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+.paymentInfo label,
+.saveInfo label {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+.orderBtnDiv {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#placeOrder {
+  font-size: 16px;
+  padding: 8px 10px;
+  background-color: white;
+  border: none;
+  color: black;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#placeOrder:hover {
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  background-color: black;
+  color: white;
+}
+
+#cancelOrder {
+  font-size: 16px;
+  padding: 6px 10px;
+  background-color: white;
+  border: none;
+  border: 2px solid #f05454;
+  color: #f05454;
+  margin-left: 8px;
+}
+
+#cancelOrder:hover {
+  background-color: #f05454;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .orderPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    margin-top: 25px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  .orderPage {
+    padding: 90px 30px 30px 30px;
+  }
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  .orderSummary {
+    width: 90%;
+  }
+  .orderInfo {
+    width: 85%;
+  }
+}
+
+@media (max-width: 460px) {
+  .orderPage {
+    padding: 70px 0 30px 0;
+  }
+  #productNameCell {
+    padding-left: 8px;
+  }
+  #optionalField {
+    display: none;
+  }
+  .orderSummary {
+    width: 90%;
+    padding: 10px;
+  }
+  .orderSummary #cellItemWM {
+    display: unset;
+  }
+  .orderInfo {
+    width: 90%;
+    padding: 10px;
+  }
+  .addressForm #oderInfoTitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 15px;
+  }
+  .addressForm label {
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  .addressForm input,
+  .addressForm textarea {
+    font-size: 16px;
+  }
+  .addressForm p {
+    font-weight: 550;
+    margin-top: 15px;
+  }
+  .paymentInfo input,
+  .saveInfo input {
+    vertical-align: middle;
+    margin-bottom: 3px;
+  }
+  .paymentInfo label,
+  .saveInfo label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+  .orderBtnDiv button,
+  .orderBtnDiv a {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+}
+
+@media (max-width: 361px) {
+  .orderInfo textarea:placeholder-shown {
+    height: 35px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

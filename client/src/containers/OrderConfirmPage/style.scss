@@ -1,0 +1,135 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.orderConPageBG {
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.orderConfirmPage {
+  padding: 100px 0 30px 0;
+  min-height: 100vh;
+}
+
+.orderConfirmMsg {
+  width: 700px;
+  margin: 0 auto;
+  background-color: rgba(0, 136, 145, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  p {
+    line-height: 2;
+  }
+  #instructionMsg {
+    color: $colorF;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .orderID {
+    color: $colorB;
+    font-weight: 550;
+    font-size: 18px;
+  }
+  #Order-ID {
+    background-color: transparent;
+    border: none;
+    color: $colorB;
+    width: 120px;
+    font-weight: 550;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+    }
+  }
+  #copyBtn {
+    font-size: 14px;
+    background-color: #555;
+    color: $colorA;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 10px;
+  }
+  #contLink {
+    color: $colorB;
+    background-color: $colorA;
+    font-size: 16px;
+    padding: 6px 8px;
+    &:hover {
+      background-color: $colorD;
+      color: $colorA;
+    }
+  }
+  .trackMsg {
+    margin-bottom: 10px;
+  }
+}
+
+//copy text display
+.tooltip {
+  position: absolute;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent;
+  border-top-color: transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+//media queries
+@media (max-width: 950px) {
+  .orderConfirmMsg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 585px) {
+  .orderConfirmMsg {
+    #orderID {
+      color: $colorB;
+      font-weight: 550;
+      font-size: 16px;
+    }
+  }
+}

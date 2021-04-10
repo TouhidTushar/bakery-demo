@@ -1,0 +1,100 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+#enabled {
+  cursor: default;
+}
+
+#disabled {
+  cursor: not-allowed;
+}
+
+.cardContainer {
+  position: relative;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $colorD;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  &:hover {
+    .cardImgContainer {
+      transform: translateY(-65px);
+    }
+    .cardText {
+      background-color: $colorA;
+    }
+  }
+}
+
+.cardImgContainer {
+  width: 180px;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+  transition: all 0.5s ease;
+  img {
+    width: 180px;
+    border-radius: 10px;
+  }
+}
+
+.cardText {
+  backdrop-filter: blur(5px);
+  width: 80%;
+  font-size: 16px;
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 10px;
+  border-radius: 0 0 10px 10px;
+  color: $colorB;
+  transition: all 0.5s ease;
+}
+
+.productStock {
+  position: relative;
+  transform: rotate(-25deg);
+  color: $colorA;
+}
+
+.inStock {
+  position: absolute;
+  background-color: $colorE;
+  padding: 2px 4px;
+  bottom: -35px;
+  right: -10px;
+}
+
+.outStock {
+  position: absolute;
+  background-color: $colorF;
+  padding: 2px 4px;
+  bottom: -30px;
+  right: -25px;
+}
+
+.addToCart {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: $colorC;
+  color: $colorA;
+  text-align: center;
+  &:hover {
+    transform: scale(0.9, 0.9);
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+  }
+}
+
+// @media (max-width: 720px) {
+//   .cardContainer {
+//     transform: scale(0.9, 0.9);
+//   }
+// }

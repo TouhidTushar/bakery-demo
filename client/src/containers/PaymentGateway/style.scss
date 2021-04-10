@@ -1,0 +1,35 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.paymentPage {
+  padding: 100px 10px 10px 10px;
+  min-height: 100vh;
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.paymentMsg {
+  width: fit-content;
+  margin: 10vh auto 0 auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: $colorC;
+  }
+  h3 {
+    text-align: center;
+  }
+}

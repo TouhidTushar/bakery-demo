@@ -1,0 +1,480 @@
+.productDetailsPage {
+  padding: 100px 25px 25px 25px;
+  min-height: 100vh;
+}
+
+.productDetailsPage .fa-star {
+  color: #008891;
+}
+
+.productWrapper {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.imgSlider {
+  position: relative;
+  width: 27vw;
+  height: 36vw;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.navLeft,
+.navRight {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  height: 2vw;
+  width: 2vw;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.navLeft:hover,
+.navRight:hover {
+  opacity: 1;
+}
+
+.navLeft {
+  left: 5px;
+}
+
+.navRight {
+  right: 5px;
+}
+
+.picCarousel {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 27vw;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+}
+
+.picCarousel span {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.productDetailsContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40vw;
+  min-height: 36vw;
+  padding: 15px 15px 15px 40px;
+  border-left: 4px solid #00587a;
+}
+
+.productDetailsContainer h1 {
+  color: #00587a;
+  margin-bottom: 25px;
+  font-size: 2.5vw;
+}
+
+.productDetailsContainer .p-attr {
+  font-size: 1.2vw;
+  margin-bottom: 15px;
+}
+
+.productDetailsContainer button {
+  font-size: 1.5vw;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 15px;
+  color: white;
+  background-color: #008891;
+}
+
+.productDetailsContainer button:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.price-Btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#itemPrice {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.5vw;
+  border: 2px solid #008891;
+  padding: 6px 12px;
+  color: #008891;
+}
+
+.reviewSection h2 {
+  font-size: 24px;
+}
+
+.reviewForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.reviewForm p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.reviewForm #reviewLabel {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.reviewForm .ratingInput {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 20px;
+}
+
+.reviewForm input[type="radio"] {
+  margin: 0 10px 0 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.reviewForm #notRatedMsg {
+  font-size: 16px;
+  color: #f05454;
+  margin: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 20px;
+}
+
+.reviewForm textarea {
+  resize: none;
+  width: 70vw;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.reviewForm textarea:focus {
+  outline: none;
+}
+
+.reviewForm textarea:placeholder-shown {
+  font-size: 14px;
+}
+
+.reviewForm textarea::-webkit-input-placeholder {
+  color: #f05454;
+  opacity: 1;
+}
+
+.reviewForm textarea:-ms-input-placeholder {
+  color: #f05454;
+  opacity: 1;
+}
+
+.reviewForm textarea::-ms-input-placeholder {
+  color: #f05454;
+  opacity: 1;
+}
+
+.reviewForm textarea::placeholder {
+  color: #f05454;
+  opacity: 1;
+}
+
+.reviewForm button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 16px;
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background-color: #008891;
+}
+
+.reviewForm button:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+#revBorder {
+  border-bottom: 8px solid #00587a;
+}
+
+.starWrapper {
+  position: relative;
+  height: 20px;
+}
+
+.rating-label {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.rating-label i {
+  font-size: 20px;
+}
+
+.userReview {
+  margin: 10px 0px;
+  padding: 25px;
+}
+
+.userReview .revInfo {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.revUser {
+  display: inline;
+  font-size: 24px;
+  font-weight: 600;
+  color: #00587a;
+  margin-bottom: 15px;
+}
+
+#highlightReview {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.revAction {
+  margin-left: 20px;
+}
+
+.revAction i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.no-deleteOverlay {
+  display: none;
+}
+
+.deleteOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.deleteOverlay .delReview {
+  border: 2px solid #f05454;
+  background-color: white;
+  color: #f05454;
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.deleteOverlay .delReview:hover {
+  background-color: #f05454;
+  color: white;
+}
+
+.deleteOverlay .cancelDelReview {
+  border: 2px solid #008891;
+  background-color: white;
+  color: #008891;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.deleteOverlay .cancelDelReview:hover {
+  background-color: #008891;
+  color: white;
+}
+
+@media (max-width: 1020px) {
+  .productDetailsContainer h1 {
+    font-size: 25px;
+  }
+  .productDetailsContainer .p-attr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .productDetailsPage {
+    padding: 80px 25px 25px 25px;
+  }
+  .productWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imgSlider {
+    width: 360px;
+    height: 480px;
+    margin-bottom: 30px;
+  }
+  .navLeft,
+  .navRight {
+    height: 25px;
+    width: 25px;
+  }
+  .picCarousel {
+    width: 360px;
+  }
+  .picCarousel span {
+    width: 10px;
+    height: 10px;
+  }
+  .productDetailsContainer {
+    width: 320px;
+    padding: 15px 25px;
+    border-right: 4px solid #00587a;
+  }
+  .productDetailsContainer button {
+    font-size: 14px;
+  }
+  #itemPrice {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 460px) {
+  .productDetailsPage {
+    padding: 70px 20px 20px 20px;
+  }
+  .imgSlider {
+    width: 252px;
+    height: 336px;
+    margin-bottom: 25px;
+  }
+  .navLeft,
+  .navRight {
+    height: 20px;
+    width: 20px;
+  }
+  .picCarousel {
+    width: 252px;
+  }
+  .productDetailsContainer {
+    width: 225px;
+  }
+  .productDetailsContainer button {
+    margin: 15px 0 0 0;
+  }
+  .reviewForm {
+    padding: 25px 0;
+  }
+  .reviewForm textarea {
+    width: 240px;
+    height: 45px;
+  }
+  .userReview {
+    padding: 15px;
+  }
+  .userReview .revInfo {
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+  .price-Btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .revUser {
+    font-size: 20px;
+    font-weight: 550;
+  }
+}
+/*# sourceMappingURL=style.css.map */

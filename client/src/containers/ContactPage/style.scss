@@ -1,0 +1,433 @@
+$colorA: rgb(255, 255, 255);
+$colorB: rgb(0, 0, 0);
+$colorC: rgb(0, 136, 145);
+$colorD: rgb(0, 88, 122);
+$colorE: rgb(0, 197, 0);
+$colorF: rgb(240, 84, 84);
+
+.contactPage {
+  padding: 105px 15px 15px 15px;
+  h1 {
+    width: max-content;
+    background-color: $colorB;
+    color: $colorA;
+    padding: 8px 15px;
+    margin: 0 auto 25px auto;
+  }
+}
+
+.orderTracking {
+  background-image: linear-gradient(to bottom, $colorD, $colorC);
+  padding: 50px 10px;
+  .trackMsg {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.trackOrderForm {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: $colorB;
+  border-radius: 10px;
+  margin: 0 auto;
+  input {
+    height: 40px;
+    font-size: 18px;
+    padding-left: 5px;
+    border: 1px solid $colorB;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .trackBtn {
+    width: max-content;
+    padding: 6px 8px;
+    border: none;
+    background-color: $colorA;
+    color: $colorD;
+    border: 2px solid $colorD;
+    font-size: 18px;
+    margin: 0 auto;
+    &:hover {
+      background-color: $colorD;
+      color: $colorA;
+    }
+  }
+}
+
+.ordDetails {
+  width: max-content;
+  background-color: $colorA;
+  padding: 25px;
+  margin: 15px auto 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.orderStatusBar {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 20px;
+  border-left: 5px solid $colorD;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+.progressBar {
+  position: relative;
+  height: 20px;
+  width: 20%;
+  background-color: transparent;
+
+  p {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: $colorD;
+    left: 40%;
+    bottom: -30px;
+  }
+}
+
+.progressBarActive {
+  position: relative;
+  height: 20px;
+  width: 20%;
+  background-image: linear-gradient(
+    to bottom,
+    $colorD,
+    rgba(0, 88, 122, 0.9),
+    $colorD
+  );
+  p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: $colorD;
+    left: 40%;
+    bottom: -30px;
+  }
+}
+
+.progressIcon {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: $colorA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+
+.progressIconActive {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-color: $colorD;
+  color: $colorA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.location {
+  padding: 105px 10px;
+  // background-image: url("http://localhost:5000/client-static-images/illustration.jpg");
+  background-image: url("http://192.168.0.108:5000/client-static-images/illustration.jpg");
+  // background-image: url("http://0.tcp.in.ngrok.io:17352/client-static-images/illustration.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.locationMap {
+  max-width: 800px;
+  margin: 0 auto;
+  iframe {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.dmSection {
+  padding: 105px 10px 50px 10px;
+  background-image: linear-gradient(to top, $colorD, $colorC);
+  p {
+    width: max-content;
+    font-size: 28px;
+    font-weight: 600;
+    color: $colorA;
+    text-shadow: 1px 1px 1px $colorB;
+    margin: 100px auto 0 auto;
+  }
+}
+
+.directMailForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: $colorB;
+  color: $colorA;
+  border-radius: 10px;
+  label {
+    color: $colorA;
+    font-size: 18px;
+  }
+  input {
+    height: 30px;
+    padding-left: 5px;
+    color: $colorA;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $colorA;
+    }
+    &:invalid {
+      box-shadow: 0 0 0 $colorB;
+    }
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+    }
+    &:invalid {
+      box-shadow: 0 0 0 $colorB;
+    }
+  }
+  #dmBtn {
+    border: none;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 6px 10px;
+    color: $colorD;
+    background-color: $colorA;
+    border: 2px solid $colorD;
+    &:hover {
+      color: $colorA;
+      background-color: $colorD;
+    }
+  }
+}
+
+.contactListM {
+  width: 70%;
+  height: 7vw;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7vw 0;
+  li {
+    background-color: rgba(255, 255, 255, 0);
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2, 1.2);
+      background-color: $colorA;
+    }
+  }
+}
+
+#fb:hover {
+  i {
+    color: rgb(66, 103, 178);
+  }
+}
+
+#ins:hover {
+  i {
+    color: rgb(188, 42, 141);
+  }
+}
+
+#yt:hover {
+  i {
+    color: rgb(255, 0, 0);
+  }
+}
+
+#twt:hover {
+  i {
+    color: rgb(0, 172, 238);
+  }
+}
+
+#phn:hover {
+  i {
+    color: rgb(37, 211, 102);
+  }
+}
+
+.contIcon {
+  font-size: 3vw;
+  color: $colorB;
+}
+
+#progressIconDetails {
+  display: none;
+}
+
+//media queries
+@media (max-width: 720px) {
+  .contactPage {
+    padding: 75px 15px 15px 15px;
+  }
+  .contIcon {
+    font-size: 20px;
+    color: $colorB;
+  }
+  .contactListM {
+    li {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .location {
+    padding: 75px 10px 50px 10px;
+  }
+  .dmSection {
+    border-top: 25px solid $colorA;
+    p {
+      font-size: 24px;
+    }
+  }
+
+  //responsive status bar
+  .orderStatusBar {
+    margin: 15px 0;
+    width: 300px;
+    height: 15px;
+  }
+  .progressBar {
+    height: 15px;
+    p {
+      font-size: 12px;
+      font-weight: 450;
+      left: 35.5%;
+      bottom: -25px;
+    }
+  }
+
+  .progressBarActive {
+    height: 15px;
+    p {
+      font-size: 12px;
+      font-weight: 450;
+      left: 35.5%;
+      bottom: -25px;
+    }
+  }
+
+  .progressIcon {
+    top: -7.5px;
+    right: -5.5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .progressIconActive {
+    top: -7.5px;
+    right: -5.5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contactPage {
+    padding: 65px 15px 15px 15px;
+  }
+  .ordDetails {
+    width: 220px;
+    padding: 15px;
+  }
+  .location {
+    padding: 65px 10px 50px 10px;
+  }
+  .dmSection {
+    border-top: 15px solid $colorA;
+    p {
+      font-size: 18px;
+    }
+  }
+  #showItemsBox {
+    width: 200px;
+  }
+
+  .orderStatusBar {
+    position: relative;
+    margin: 15px 0;
+    width: 210px;
+    height: 10px;
+  }
+  .progressBar {
+    height: 10px;
+    p {
+      display: none;
+    }
+  }
+
+  #progressIconDetails {
+    display: block;
+  }
+
+  .progressBarActive {
+    height: 10px;
+    p {
+      display: none;
+    }
+  }
+
+  .progressIcon {
+    top: -7.5px;
+    right: -5.5px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .progressIconActive {
+    top: -7.5px;
+    right: -5.5px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
