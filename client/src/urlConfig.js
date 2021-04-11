@@ -15,4 +15,4 @@ export const productImageDir = `http://${ip}:5000/`;
 
 //embedded map
 require("dotenv").config();
-export const Map_loc = process.env.MAP_API_KEY;
+export const Map_loc = MAP_API_KEY;
