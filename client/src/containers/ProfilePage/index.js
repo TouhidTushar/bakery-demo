@@ -10,7 +10,6 @@ const ProfilePage = () => {
   const [email, setemail] = useState("");
   const [gender, setgender] = useState("");
   const [birthday, setbirthday] = useState("");
-  const birthDate = new Date(_user.birthday);
   const [lastName, setlastName] = useState("");
   const [orderData, setorderData] = useState([]);
   const [firstName, setfirstName] = useState("");
@@ -26,6 +25,7 @@ const ProfilePage = () => {
   const order = useSelector((state) => state.order);
 
   const _user = auth.user;
+  const birthDate = new Date(_user.birthday);
 
   const prepareDate = (value) => {
     if (
